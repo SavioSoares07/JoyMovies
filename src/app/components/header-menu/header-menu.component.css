@@ -5,6 +5,7 @@ div.container {
   background-color: black;
   cursor: default;
   height: 100px;
+  border-bottom: 1px solid #121212;
 }
 .container .logo {
   color: #fff;

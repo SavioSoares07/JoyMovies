@@ -3,11 +3,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #fff;
 }
+button mat-icon {
+  color: #fff;
+}
+
 html,
 body {
   height: 100%;
 }
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #000;
 }
