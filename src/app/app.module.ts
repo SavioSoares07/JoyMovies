@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import {
   BrowserModule,
   provideClientHydration,
@@ -17,6 +18,7 @@ import { ComponentsModule } from './components/components.module';
     AppRoutingModule,
     ComponentsModule,
     AngularMaterialModule,
+    HttpClientModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
