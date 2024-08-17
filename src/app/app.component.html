@@ -21,4 +21,25 @@
   <main>
     <app-container-movies></app-container-movies>
   </main>
+  <footer>
+    <div class="footer-move" (click)="passar('back')">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Search icon"
+        fontIcon="arrow_back"
+        color="#fff"
+      ></mat-icon>
+      <span>Back</span>
+    </div>
+
+    <div class="footer-move" (click)="passar('next')">
+      <span>Next</span>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Search icon"
+        fontIcon="arrow_forward"
+        color="#fff"
+      ></mat-icon>
+    </div>
+  </footer>
 </div>

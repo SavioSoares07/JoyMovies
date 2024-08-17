@@ -1,3 +1,4 @@
+<!-- container-movies.component.html -->
 <div class="container">
   <div class="container-input">
     <div class="group">
@@ -12,7 +13,11 @@
     </div>
     <button mat-raised-button color="primary">Search</button>
   </div>
+
   <div class="movies-show" *ngFor="let movie of movies">
-    <app-card-movie [movie]="movie"></app-card-movie>
+    <app-card-movie
+      [movie]="movie"
+      (click)="OnMovieCliked(movie)"
+    ></app-card-movie>
   </div>
 </div>

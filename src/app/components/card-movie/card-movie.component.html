@@ -1,9 +1,32 @@
-<div class="card mb-3">
+<div class="card">
+  <img
+    src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
+    class="card-img-top"
+    alt="{{ movie.title }}"
+  />
   <div class="card-body">
     <h5 class="card-title">{{ movie.title }}</h5>
-    <p class="card-text">{{ movie.overview }}</p>
-    <p class="card-text">
-      <small class="text-muted">Lançamento: {{ movie.release_date }}</small>
-    </p>
+  </div>
+  <div class="card-footer">
+    <div class="container-icons">
+      <span>{{ movie.release_date | date }}</span>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Search icon"
+        fontIcon="calendar_today"
+        color="#fff"
+      ></mat-icon>
+    </div>
+
+    <div class="container-icons">
+      <mat-icon
+        class="star"
+        aria-hidden="false"
+        aria-label="star icon"
+        fontIcon="star"
+        color="#FFD700"
+      ></mat-icon>
+      <span>{{ movie.vote_average | voteAverage }}</span>
+    </div>
   </div>
 </div>
