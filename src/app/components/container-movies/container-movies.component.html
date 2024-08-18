@@ -14,10 +14,16 @@
     <button mat-raised-button color="primary">Search</button>
   </div>
 
-  <div class="movies-show" *ngFor="let movie of movies">
-    <app-card-movie
-      [movie]="movie"
-      (click)="OnMovieCliked(movie)"
-    ></app-card-movie>
+  <div *ngIf="loading" class="spinner-container">
+    <mat-spinner color="primary"></mat-spinner>
+  </div>
+
+  <div *ngIf="!loading" class="container">
+    <div class="container" *ngFor="let movie of movies">
+      <app-card-movie
+        [movie]="movie"
+        (click)="OnMovieCliked(movie)"
+      ></app-card-movie>
+    </div>
   </div>
 </div>

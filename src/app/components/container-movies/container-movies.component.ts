@@ -10,17 +10,25 @@ import { Subscription } from 'rxjs';
 export class ContainerMoviesComponent implements OnInit {
   movies: any[] = [];
   selectedMovie: any = null;
+  loading: boolean = true;
   private subscription: Subscription = new Subscription();
 
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    // Inscreve-se nas mudanças do BehaviorSubject
-    this.subscription = this.apiService.movies$.subscribe((movies) => {
-      this.movies = movies;
-    });
+    this.loading = true;
+    setTimeout(() => {
+      this.subscription = this.apiService.movies$.subscribe((movies) => {
+        this.movies = movies;
+        this.loading = false;
+      });
 
-    // Carrega os filmes iniciais
+      this.apiService.getMovie();
+    }, 1000);
+  }
+
+  loadMovies() {
+    this.loading = true;
     this.apiService.getMovie();
   }
 
@@ -29,7 +37,6 @@ export class ContainerMoviesComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    // Limpa a inscrição para evitar vazamentos de memória
     this.subscription.unsubscribe();
   }
 }

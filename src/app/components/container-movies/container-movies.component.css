@@ -57,3 +57,12 @@ input:hover {
   align-items: center;
   justify-content: center;
 }
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px; /* Ajuste conforme necessário */
+}
+.movies-show {
+  display: flex;
+}
