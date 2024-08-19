@@ -1,27 +1,45 @@
-# MoviesProject
+# Joy Movies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Joy Movies é um projeto desenvolvido com Angular, utilizando Angular Material para a interface, com o objetivo de fornecer uma experiência dinâmica e agradável para os usuários que desejam explorar informações sobre filmes. A aplicação consome dados da API The Movie Database (TMDb) para exibir uma variedade de filmes, incluindo detalhes como título, sinopse, avaliação, e muito mais. Com uma interface moderna e responsiva, o Joy Movies facilita a busca por filmes populares, lançamentos recentes e favoritos do público, tornando-se uma plataforma acessível para os amantes de cinema.
 
-## Development server
+## Sobre
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto foi desenvolvido para permitir que os usuários pesquisem e explorem uma vasta coleção de filmes, oferecendo uma experiência intuitiva para encontrar o filme desejado. Com uma interface organizada e fácil de usar, a aplicação possibilita que o usuário descubra e escolha rapidamente o próximo filme para assistir, seja pelos mais populares, lançamentos ou títulos específicos de interesse.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.io/)
+- [Material Angular](https://material.angular.io)
+- [TypeScript](https://www.typescriptlang.org)
 
-## Build
+## Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js
+- Angular CLI
 
-## Running unit tests
+## Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone o repositório:
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/SavioSoares07/JoyMovies
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+cd projeto
 
-## Further help
+## Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para rodar o projeto, execute:
+
+```bash
+npm start
+
+## Contribuição
+Sinta-se à vontade para enviar pull requests. Para grandes mudanças, abra uma issue primeiro para discutirmos o que você gostaria de mudar.
+
+Por favor, certifique-se de atualizar os testes conforme apropriado.
+```
+
+## Autores
+
+- [Savio Soares](https://github.com/SavioSoares07)
