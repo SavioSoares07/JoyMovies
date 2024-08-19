@@ -14,19 +14,3 @@ div.container {
 .container .logo h1 span {
   color: aquamarine;
 }
-.container nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-.container nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-}
-.container nav ul li a:hover {
-  background-color: aquamarine;
-  color: black;
-  border-radius: 10px;
-  padding: 10px;
-}

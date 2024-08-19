@@ -18,10 +18,11 @@ export class ApiService {
 
   private getHttpOptions() {
     return {
+      method: 'GET',
       headers: new HttpHeaders({
         accept: 'application/json',
         Authorization:
-          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjOGVlMjMwNGY3NDkyMjZkODdkYjZkYzE0OGM3MTI2ZCIsIm5iZiI6MTcyMzY0NjY3OC42MDMwMDEsInN1YiI6IjY0ZDk5MWNjMGQxZTdmMDA2NmY1NzlhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3_9Pf7-yeWh9avGF9pThoWUBA_hNkHlRfDFAsKLYhT0',
+          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjOGVlMjMwNGY3NDkyMjZkODdkYjZkYzE0OGM3MTI2ZCIsIm5iZiI6MTcyMzY0NjY3OC42MDMwMDEsInN1YiI6IjYyNGQ5MTNjMGQxZTdmMDA2NmY1NzlhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3_9Pf7-yeWh9avGF9pThoWUBA_hNkHlRfDFAsKLYhT0',
       }),
     };
   }
