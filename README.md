@@ -43,21 +43,23 @@ Instale my-project com npm
 ```bash
   npm install my-project
   cd my-project
+  npm start
+
 ```
 
 ## Uso
 
 Para rodar o projeto, execute:
 
-```bash
-npm start
-
 ## Contribuição
+
 Sinta-se à vontade para enviar pull requests. Para grandes mudanças, abra uma issue primeiro para discutirmos o que você gostaria de mudar.
 
 Por favor, certifique-se de atualizar os testes conforme apropriado.
+
 ```
 
 ## Autores
 
 - [Savio Soares](https://github.com/SavioSoares07)
+```
