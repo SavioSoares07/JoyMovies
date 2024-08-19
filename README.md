@@ -27,6 +27,8 @@ git clone https://github.com/SavioSoares07/JoyMovies
 
 cd projeto
 
+npm install
+
 ## Uso
 
 Para rodar o projeto, execute:
